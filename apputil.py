@@ -8,6 +8,9 @@ def kmeans(X, k):
     """
     Perform k-means clustering on a numerical NumPy array X.
 
+    Raises:
+        ValueError: If X is not a 2D NumPy array.
+
     Parameters:
         X (np.ndarray): Input data of shape (n_samples, n_features)
         k (int): Number of clusters
@@ -30,6 +33,9 @@ def kmeans_diamonds(n, k):
     """
     Run k-means clustering on the first n rows of the numeric diamonds dataset.
 
+    Raises:
+        ValueError: If n or k is invalid
+
     Parameters:
         n (int): Number of rows to use
         k (int): Number of clusters
@@ -44,6 +50,9 @@ def kmeans_timer(n, k, n_iter=5):
     """
     Time the kmeans_diamonds function over n_iter runs.
 
+    Raises:
+        ValueError: If n_iter is not a positive integer
+    
     Parameters:
         n (int): Number of rows
         k (int): Number of clusters
